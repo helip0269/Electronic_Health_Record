@@ -6,7 +6,7 @@ import RegistrationForm from './components/RegistrationForm';
 const App = () => {
   return (
     <div>
-      <h1>Welcome to Your App</h1>
+      <h1 className='headcolor'>Registration-App</h1>
       <RegistrationForm />
     </div>
   );

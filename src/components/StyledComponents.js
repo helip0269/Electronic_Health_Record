@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledBackground = styled.div`
-  background-image: url('../assets/image1.jpg'); /* Adjust the path to your background image */
+  background-image: url('../assets/image3.png'); 
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -16,7 +16,7 @@ export const StyledFormContainer = styled.div`
 `;
 
 export const StyledForm = styled.form`
-  background-color: rgba(183, 199, 22, 0.2);
+  background-color: rgb(175, 184, 207, 0.2);
   padding: 80px; 
   border-radius: 8px;
 `;
@@ -32,7 +32,7 @@ export const StyledInput = styled.input`
 export const StyledButton = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: yellow;
+  background-color: #EEE4B1;
   border: none;
   border-radius: 45px;
   cursor: pointer;

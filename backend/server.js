@@ -1,16 +1,14 @@
-// server.js
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const User = require('./models/User');
-const cors = require('cors'); // Import cors middleware
+const cors = require('cors'); 
 
 const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors()); // Use cors middleware to allow cross-origin requests
+app.use(cors()); 
 
 // MongoDB connection
 const uri = 'mongodb+srv://helip0269:registration@cluster0.eccq4oj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';

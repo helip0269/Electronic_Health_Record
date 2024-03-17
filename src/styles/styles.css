@@ -1,7 +1,11 @@
 body {
-    background-image: url('../assets/image1.jpg'); /* Replace 'backgroundImage.jpg' with the actual file name */
+    background-image: url('../assets/image3.png'); 
     background-size: cover;
     background-position: center;
   }
 
- 
+ .headcolor {
+  color: #fff;
+  display: flex;
+  font-style: italic;
+ }
