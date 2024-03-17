@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -11,8 +12,8 @@ app.use(bodyParser.json());
 app.use(cors()); 
 
 // MongoDB connection
-const uri = 'mongodb+srv://helip0269:registration@cluster0.eccq4oj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
